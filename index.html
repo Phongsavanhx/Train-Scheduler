@@ -7,10 +7,10 @@
   <meta charset="UTF-8">
   <title>Train-Scheduler</title>
   <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <!-- Bootstrap CDN-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
   <!-- Firebase Reference -->
   <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
   <!-- Link to JS -->
@@ -19,7 +19,6 @@
   <script type="text/javascript" src="https://momentjs.com/downloads/moment.js"></script>
   <!-- Link to CSS -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
-
 </head>
 
 <body>
@@ -60,19 +59,19 @@
             <form>
               <div class="form-group">
                 <label for="train-name">Train Name</label>
-                <input class="form-control" id="trainName" type="text">
+                <input class="form-control" id="trainName" type="text" placeholder="Add Train">
               </div>
               <div class="form-group">
                 <label for="destination">Destination</label>
-                <input class="form-control" id="destination" type="text">
+                <input class="form-control" id="destination" type="text" placeholder="Destination">
               </div>
               <div class="form-group">
                 <label for="first-train-time">First Train Time (HH:mm - military time)</label>
-                <input class="form-control" id="firstTrain" type="text">
+                <input class="form-control" id="firstTrain" type="time" min="00:00" max="23:59" placeholder="Train Time (HH:mm - military time)">
               </div>
               <div class="form-group">
                 <label for="train-frequency">Frequency (min)</label>
-                <input class="form-control" id="interval" type="number">
+                <input class="form-control" id="interval" type="number" placeholder="Frequency (min)..">
               </div>
               <button class="btn btn-primary" id="addTrain" type="submit">Submit</button>
             </form>

@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    // Initialize Firebase
+    // Initialize Firebase /* I think I screwed up the firebase, needs to be worked on */
     var config = {
       apiKey: "AIzaSyD0nNgXKIZFuKnSaona9j7gTwqn29ZFZOg",
       authDomain: "train-scheduler-d96fc.firebaseapp.com",
